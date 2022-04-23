@@ -1,0 +1,21 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ atxlandmarks }}{% endblock %}
+
+{% block page_description %}{{ name }}  {{ established }}{% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <img src="../img/{{ image }}" alt="" class="img-fluid mb-4">
+      </div>
+      <div class="col-sm-8">
+          <h1>{{ slug }}</h1>
+          <p>{{ blurb | safe }}</p>
+      </div>
+    </div>
+  </article>
+{% endblock %}

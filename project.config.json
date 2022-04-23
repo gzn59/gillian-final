@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
+      "type": "doc",
+      "name": "library"
+    },
+    {
+      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
+      "type": "sheet",
+      "name": "bookstores"
+    },
+    {
+      "fileId": "1RxILtg4NEVcb88GQr-RAb1y2pitKwr5B2nUiUCYhw1U",
+      "type": "doc",
+      "name": "atxrestaurants"
+    },
+    {
+      "fileId": "1z6UC4YYIDn1Is9YCq2cUzwICN8hO8H8MAzGMOmkWaA4",
+      "type": "sheet",
+      "name": "atxlandmarks"
+    }
+  ],
+  "to_bake": [
+    {
+      "template": "bake-atxlandmarks",
+      "data": "atxlandmarks",
+      "array": "landmarks",
+      "slug": "slug",
+      "path": "landmarks"
+    }
+  ]
+}

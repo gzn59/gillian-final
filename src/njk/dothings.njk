@@ -1,0 +1,24 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  <h1>Where 2 Eat in Austin</h1>
+  <div class="row"><p>Do you need help figuring out where to get a bite?</p>
+<p>Don't worry. It's hard visiting a new city and finding the best places to eat at. That is why we created this website. To make things easy for you to make a decision and know what's essential when in Austin. But, in Austin, you can never pick a bad place to eat.</p></div>
+
+  <div class="row">
+    {% for item in atxrestaurants.restaurants %}
+    <div class="col-sm-6">
+  <div class="card mb-2">
+  <img src="img/{{ item.image }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class= "card-text-p">{{item.category}}</p>
+    <p class="card-text">{{item.address}}</p>
+  </div>
+  </div>
+</div>
+{% endfor %}
+      </div>
+</article>
+{% endblock %}
