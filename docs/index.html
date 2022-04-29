@@ -3,15 +3,15 @@
   <!-- A Intro to Coding for Journalists class project -->
   <head>
     <title>Do 512 Things 2 Do | Homepage</title>
-    <meta name="description" content="The index search description for this page goes here.">
+    <meta name="description" content=" This is the homepage for the website where people can begin their search from.">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <div class="container-fluid" style="background-color: #a84f14">
     <a class="navbar-brand" href="index.html">512 Things 4 U</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -19,13 +19,21 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
               <li class="nav-item">
-        <a class="nav-link" href="dothings.html">Restaurants</a>
+        <a class="nav-link" href="restaurants.html">Restaurants</a>
       </li>
-        <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Landmarks
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           
+            <li><a class="dropdown-item" href="landmarks/university-of-texas.html">The University of Texas</a></li>
+            
+            <li><a class="dropdown-item" href="landmarks/texas-state-capitol.html">The Texas State Capitol</a></li>
+            
+            <li><a class="dropdown-item" href="landmarks/lady-bird-lake.html">Lady Bird Lake</a></li>
+            
+            <li><a class="dropdown-item" href="landmarks/mount-bonnell.html">Mount Bonnell</a></li>
             
           </ul>
         </li>
@@ -44,29 +52,58 @@
 <div class="container">
   <h1>512 Things 2 Do</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  
-  <h2>Landmarks Title</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
+  <br>
+
+  <h2>512 Things 2 See</h2>
+  <p>You know the saying, "when in Austin"? Of course you do. Here are the top places you need to visit when in the 512.</p>
   <div class="row">
     
-      <div class="col">
-        <img src="img/university-of-texas.jpg" alt="" class="img-fluid">
-        <h3><a href="atxlandmarks/university-of-texas.html"></a></h3>
+      <div class="col-sm-6">
+      <div class="card mb-2">
+        <img src="img/univ-of-tx.jpg" alt="" class="img-fluid">
+      <div class="card-body">
+      <h5 class="card-title">The University of Texas</h5>
+      <p class="card-text">110 Inner Campus Dr, Austin, TX 78712</p>
+      <p class="card-text">Sightseeing, bowling, exploring museums, attending concerts</p>
+      <a href="landmarks/university-of-texas.html" "target="_blank"" class="btn btn-outline-success btn-sm d-grid gap-2 col-6 mx-auto">Read On</a>
+      </div>
+      </div>
       </div>
     
-      <div class="col">
+      <div class="col-sm-6">
+      <div class="card mb-2">
         <img src="img/texas-state-capitol.jpg" alt="" class="img-fluid">
-        <h3><a href="atxlandmarks/texas-state-capitol.html"></a></h3>
+      <div class="card-body">
+      <h5 class="card-title">The Texas State Capitol</h5>
+      <p class="card-text">1100 Congress Ave, Austin, TX 78701</p>
+      <p class="card-text">Free 30-minute tours, good food, biking and sightseeing</p>
+      <a href="landmarks/texas-state-capitol.html" "target="_blank"" class="btn btn-outline-success btn-sm d-grid gap-2 col-6 mx-auto">Read On</a>
+      </div>
+      </div>
       </div>
     
-      <div class="col">
+      <div class="col-sm-6">
+      <div class="card mb-2">
         <img src="img/lady-bird-lake.jpg" alt="" class="img-fluid">
-        <h3><a href="atxlandmarks/lady-bird-lake.html"></a></h3>
+      <div class="card-body">
+      <h5 class="card-title">Lady Bird Lake</h5>
+      <p class="card-text">1200 W Cesar Chavez St, Austin, TX 78703</p>
+      <p class="card-text">Hiking, biking, running, kayaking and paddleboarding</p>
+      <a href="landmarks/lady-bird-lake.html" "target="_blank"" class="btn btn-outline-success btn-sm d-grid gap-2 col-6 mx-auto">Read On</a>
+      </div>
+      </div>
       </div>
     
-      <div class="col">
+      <div class="col-sm-6">
+      <div class="card mb-2">
         <img src="img/mount-bonnell.jpg" alt="" class="img-fluid">
-        <h3><a href="atxlandmarks/mount-bonnell.html"></a></h3>
+      <div class="card-body">
+      <h5 class="card-title">Mount Bonnell</h5>
+      <p class="card-text">3800 Mount Bonnell Dr., Austin, TX 78731</p>
+      <p class="card-text">Hiking, sightseeing</p>
+      <a href="landmarks/mount-bonnell.html" "target="_blank"" class="btn btn-outline-success btn-sm d-grid gap-2 col-6 mx-auto">Read On</a>
+      </div>
+      </div>
       </div>
     
   </div>
@@ -75,7 +112,7 @@
     <footer>
 <p id="legal" class="center-block text-center">
   <small>&copy; <span class="copyright-year"></span>
-  A class project by First Last.
+  A class project by Gillian Navarro.
 </p>
 </footer>
 

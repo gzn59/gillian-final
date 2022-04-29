@@ -2,20 +2,28 @@
 
 {% block page_title %}Homepage{% endblock %}
 
-{% block page_description %}The index search description for this page goes here.{% endblock %}
+{% block page_description %} This is the homepage for the website where people can begin their search from.{% endblock %}
 
 {% block content %}
 <div class="container">
   <h1>512 Things 2 Do</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  
-  <h2>Landmarks Title</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
+  <br>
+
+  <h2>512 Things 2 See</h2>
+  <p>You know the saying, "when in Austin"? Of course you do. Here are the top places you need to visit when in the 512.</p>
   <div class="row">
     {% for item in atxlandmarks.landmarks%}
-      <div class="col">
-        <img src="img/{{ item.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="atxlandmarks/{{ item.slug }}.html">{{ item.title }}</a></h3>
+      <div class="col-sm-6">
+      <div class="card mb-2">
+        <img src="img/{{ item.image }}" alt="" class="img-fluid">
+      <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">{{item.location}}</p>
+      <p class="card-text">{{item.activities}}</p>
+      <a href="landmarks/{{item.slug}}.html" "target="_blank"" class="btn btn-outline-success btn-sm d-grid gap-2 col-6 mx-auto">Read On</a>
+      </div>
+      </div>
       </div>
     {% endfor %}
   </div>

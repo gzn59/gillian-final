@@ -2,7 +2,7 @@
 
 {% set relative_path = "../" %}
 
-{% block page_title %}{{ atxlandmarks }}{% endblock %}
+{% block page_title %}{{ name }}{% endblock %}
 
 {% block page_description %}{{ name }}  {{ established }}{% endblock %}
 
@@ -13,8 +13,8 @@
           <img src="../img/{{ image }}" alt="" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
-          <h1>{{ slug }}</h1>
-          <p>{{ blurb | safe }}</p>
+          <h1>{{ name }}</h1>
+          <p>{{ description | safe }}</p>
       </div>
     </div>
   </article>
