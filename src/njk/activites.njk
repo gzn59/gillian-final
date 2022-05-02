@@ -1,0 +1,36 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Activities{% endblock %}
+
+{% block page_description %} This is the homepage for the website where people can begin their search from.{% endblock %}
+
+{% block content %}
+<article class="container">
+  <h1>Where 2 Hang Out</h1>
+ <p>Do you need things to do?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere doloremque ea adipisci. Sit maxime voluptates perferendis sunt velit, facere laboriosam reiciendis voluptatem odit corporis neque porro. Sit placeat libero rem!</p>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Activity</th>
+        <th scope="col">Date and Time</th>
+        <th scope="col">Address</th>
+        <th scope="col">Check it out!</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in atxlandmarks.activities %}
+      <tr>
+        <th scope="row">{{item.activity}}</th>
+        <td>{{item.date_time}}</td>
+        <td>{{item.address}}</td>
+        <td><a href="{{item.url}}" "target="_blank"" class="btn btn-outline-success btn-sm d-grid gap-2 col-6 mx-auto">Visit Site</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+</article>
+{% endblock %}
